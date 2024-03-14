@@ -15,7 +15,7 @@ h1{
     padding-left: -50px;
 }
 
-ul {
+#topnav{
     list-style-type: none;
     margin: 0;
     padding-bottom: 20px;
@@ -41,7 +41,6 @@ ul {
     padding-top: 30px;
     position: absolute;
     top: 10px;
-
 }
 
 
