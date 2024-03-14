@@ -1,0 +1,47 @@
+header{
+    
+    font-size: 25px;
+    background-image:url(water.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: rop;
+    box-sizing: border-box;
+}
+
+h1{
+    padding-bottom: 4em;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: -50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid gray;
+}
+
+#nav{
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav:hover{
+    color: white;
+    text-decoration:underline;
+}
+
+#logo{
+    width: 7em;
+    height: 7em;
+    padding-top: 30px;
+    position: absolute;
+    top: 10px;
+
+}
+
+
