@@ -1,0 +1,152 @@
+#abyssal_image{
+    height: 200px;
+}
+
+.row{
+    display: flex;
+}
+
+.anglerfish{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.glashead{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.dumbo{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#abyssalh1{
+    padding-bottom: 0em;
+}
+
+#abyssal_under_text{
+    text-align: center;
+}
+
+.anglerfish:hover .angler_image{
+    opacity: 0.3;
+}
+
+.anglerfish:hover .angler_middle{
+    opacity: 1;
+}
+
+.anglerfish{
+    position: relative
+}
+
+  .angler_image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .angler_middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .glashead:hover .glashead_image{
+    opacity: 0.3;
+}
+
+.glashead:hover .glashead_middle{
+    opacity: 1;
+}
+
+.glashead{
+    position: relative
+}
+
+  .glashead_image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .glashead_middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .dumbo:hover .dumbo_image{
+    opacity: 0.3;
+}
+
+.dumbo:hover .dumbo_middle{
+    opacity: 1;
+}
+
+.dumbo{
+    position: relative
+}
+
+  .dumbo_image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .dumbo_middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .angler_text {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+ }
+
+ .glashead_text {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+ }
+
+ .dumbo_text {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+ }

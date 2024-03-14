@@ -1,9 +1,14 @@
-header{
-    
+body{
     font-size: 25px;
     background-image:url(water.jpg) ;
     background-repeat: no-repeat;
     background-size:cover;
+    font-family: rop;
+    box-sizing: border-box;
+}
+header{
+    
+    font-size: 25px;
     font-family: rop;
     box-sizing: border-box;
 }
