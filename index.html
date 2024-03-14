@@ -16,7 +16,7 @@
 
         <div class="header">
             <h1>The secrets of the depth</h1>
-            <img id="logo" src="logo3.png" alt="">
+            <img id="logo" src="images/logo3.png" alt="">
         </div>
 
         <nav class="topnav">
@@ -32,42 +32,38 @@
     </header>
 
     <div id="AbyssalZone">
-        <h1 id="abyssalh1">The Abyssal Zone</h1>
-        <p id="abyssalp">The abyss, in the range of -3000 to -6500 m, is largely unexplored, but we know it contains
+        <h1 class="abyssalh1">The Abyssal Zone</h1>
+        <p>The abyss, in the range of -3000 to -6500 m, is largely unexplored, but we know it contains
             <br> animals, mainly bioluminescencing fishes, found nowhere else on earth. It’s also abundant in minerals
             <br> frequently used in manufacturing. The bottom at these depths accounts for about <br> one-third of the
             planet’s seafloor. The sheer size of this area, coupled with the challenges of <br> descending to depths
             where water pressure can reach 600 atmospheres, makes exploration <br> difficult—but by no means impossible.
         </p>
         <div class="abyssal_row">
-            <div class="anglerfish">
-                <img id="abyssal_image" src="anglerfish.png" alt="anglerfish" height="35%" width=auto
-                    class="angler_image">
+            <div class="anglerfish image-cell">
+                <img src="images/anglerfish.png" alt="anglerfish" height="35%" width=auto
+                    class="angler_image abyssal_image" target="angler_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
                 <p class="abyssal_under_text">Anglerfish</p>
-                <div class="angler_middle">
-                    <div class="angler_text">This terrifying fish hunts with his lure that bioluminescenc, <br> attracting
-                        other fish, and his big- sharp teeth. Luckily he lives in about 5000m under the sea level.
-                    </div>
+                <div id="angler_text" class="image-text angler_text angler_middle hidden-text">This terrifying fish hunts with his lure that bioluminescenc, <br> attracting
+                    other fish, and his big- sharp teeth. Luckily he lives in about 5000m under the sea level.
                 </div>
             </div>
-            <div class="glashead">
-                <img id="abyssal_image" src="glashead.png" alt="glasheadfish" height="35%" width=auto
-                    class="glashead_image">
+            <div class="glashead image-cell">
+                <img src="images/glashead.png" alt="glasheadfish" height="35%" width=auto
+                    class="glashead_image abyssal_image" target="glashead_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
                 <p class="abyssal_under_text">Glassheadfish</p>
-                <div class="glashead_middle">
-                    <div class="glashead_text">This strange- looking fish has no skull and you can see into <br> his
-                        head. Those green
-                        growths in his head aren’t a second pair of eyes, but light sensors.</div>
-                </div>
+                <div id="glashead_text" class="image-text glashead_text glashead_middle hidden-text">This strange- looking fish has no skull and you can see into <br> his
+                    head. Those green
+                    growths in his head aren’t a second pair of eyes, but light sensors.</div>
             </div>
-            <div class="dumbo">
-                <img id="abyssal_image" src="dumbo.png" alt="dumbo octopus" height="35%" width=auto class="dumbo_image">
+            <div class="dumbo image-cell">
+                <img src="images/dumbo.png" alt="dumbo octopus" height="35%" width=auto 
+                    class="dumbo_image abyssal_image" target="dumbo_text"
+                    onmouseover="showText(this)" onmouseleave="hideText(this)">
                 <p class="abyssal_under_text">Dumbo Octopus</p>
-                <div class="dumbo_middle">
-                    <div class="dumbo_text">This cute octopus is named exactly what you thing. With it’s <br> large ear-
-                        like fins,
-                        scientists decided to name the specie after the cartoon elephant dumbo.</div>
-                </div>
+                <div id="dumbo_text" class="image-text dumbo_text dumbo_middle hidden-text">This cute octopus is named exactly what you thing. With it’s <br> large ear-
+                    like fins,
+                    scientists decided to name the specie after the cartoon elephant dumbo.</div>
             </div>
         </div>
 
@@ -82,11 +78,29 @@
                     here</a></center>
             <br>
 
-            <center><img id="logo3" src="logo3.png" alt="Logo" style="width:100px; height: 100px;"></center>
+            <center><img id="logo3" src="images/logo3.png" alt="Logo" style="width:100px; height: 100px;"></center>
 
             <div id="footerD">The secrets of the depth © 2024</div>
 
         </footer>
+
+        <script>
+            function showText(img) {
+                var text_element_id = img.getAttribute('target');
+                var text_element = document.getElementById(text_element_id);
+                text_element.classList.remove('hidden-text');
+                text_element.classList.add('shown-text');
+                img.classList.add('backimage');
+            }
+
+            function hideText(img) {
+                var text_element_id = img.getAttribute('target');
+                var text_element = document.getElementById(text_element_id);
+                text_element.classList.add('hidden-text');
+                text_element.classList.remove('shown-text');
+                img.classList.remove('backimage');
+            }
+        </script>
 </body>
 
 </html>
