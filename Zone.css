@@ -6,12 +6,13 @@
     position: relative;
     flex: 33.33%;
     padding: 5px;
-    
+    transform: translateY(-10%);
+    animation: floater 3s infinite;
+    transition: ease 0.5s;
 }
 
 .Zone {
     font-size: 150% ;
-    border-bottom: 2px solid gray;
     text-align: center;
 }
 
@@ -145,4 +146,30 @@ span:nth-child(7) {
 #TheBottom {
   color: white;
   text-shadow: #555 1px 1px;
+}
+
+.field {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  border-top: 2px dashed;
+  border-color: black;
+}
+
+.legend {
+  font-size:200%;
+  color: white;
+  text-shadow: #555 1.5px 1.5px;
+}
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
 }
