@@ -13,8 +13,7 @@
 
 <body>
     <button onclick="topFunction()" id="buttonTop">Swim to surface</button>
-    <header>
-
+    <header id="header">
 
         <img id="logo" src="images/logo3.png">
 
@@ -349,7 +348,7 @@
                     </div>
                 </div>
 
-               
+
                 <div>
                     <img src="images/Aurelia aurita.png" height="35%" width=auto class="image" target="au_text"
                         onmouseover="showText(this)" onmouseleave="hideText(this)">
@@ -423,8 +422,15 @@
         }
 
         function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            moveToHash('#header');
+        }
+
+        function moveToHash(hash) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
         }
 
         $("a").on('click', function (event) {
@@ -433,13 +439,7 @@
                 event.preventDefault();
 
                 var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-                });
+                moveToHash(hash);
             }
         });
     </script>

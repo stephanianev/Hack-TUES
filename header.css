@@ -12,7 +12,7 @@ header{
 }
 
 .header{
-    padding-bottom: 7em;
+    padding-bottom: 7em !important;
     padding-top: 3em;
     text-align: center;
     padding-left: -50px;
