@@ -9,6 +9,12 @@
     
 }
 
+.Zone {
+    font-size: 150% ;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -90,14 +96,6 @@ span:nth-child(7) {
   font-size: 16px;
   padding: 16px 32px;
   max-width: 20em;
-}
-
-#AbyssalZone{
-  border-bottom: 2px solid gray;
-}
-
-#HadalZone{
-  border-bottom: 2px solid gray;
 }
 
 .backimage {

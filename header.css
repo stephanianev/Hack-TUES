@@ -1,12 +1,13 @@
 body{
-    background-image: url(water.jpg);
+    background-image: url(images/water.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: grey;
+    color: lightgrey;
 }
 
 header{
     
+    color: black;
     font-size: 25px;
     font-family: rop;
     box-sizing: border-box;
@@ -19,7 +20,7 @@ header{
 
 }
 
-h1{
+.header{
     padding-bottom: 7em;
     padding-top: 3em;
     text-align: center;
