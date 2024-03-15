@@ -96,6 +96,8 @@ span:nth-child(7) {
   font-size: 16px;
   padding: 16px 32px;
   max-width: 20em;
+  border-radius: 12px;
+  text-shadow: none;
 }
 
 .backimage {
@@ -113,4 +115,34 @@ span:nth-child(7) {
 #text{
   max-width: 400px;
   font-size: 20px;
+}
+
+#SunlitZone {
+  color: rgb(73, 72, 72);
+  text-shadow: #555 1px 1px;
+}
+
+#TwilightZone {
+  color: rgb(89, 89, 89);
+  text-shadow: #555 1px 1px;
+}
+
+#MidnightZone {
+  color: rgb(103, 102, 102);
+  text-shadow: #555 1px 1px;
+}
+
+#AbyssalZone {
+  color: rgb(152, 151, 151);
+  text-shadow: #555 1px 1px;
+}
+
+#HadalZone {
+  color: rgb(198, 197, 197);
+  text-shadow: #555 1px 1px;
+}
+
+#TheBottom {
+  color: white;
+  text-shadow: #555 1px 1px;
 }

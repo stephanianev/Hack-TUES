@@ -13,12 +13,11 @@
 </head>
 
 <body>
-
-    <button onclick="topFunction()" id="buttonTop">Back to the surface</button>
+    <button onclick="topFunction()" id="buttonTop">Swim to surface</button>
     <header>
 
 
-        <img id="logo" src="images/logo3.png" alt="">
+        <img id="logo" src="images/logo3.png">
 
         <nav class="topnav">
             <ul id="topnav">
@@ -39,210 +38,274 @@
             <span>the</span>
             <span>depth</span>
         </h1>
-        <p id="topInfo"><span>Dive into the depths of the ocean, get acquainted with the hidden</span> <span>unique
+        <p id="topInfo"><span>Dive into the depths of the ocean, get acquainted with the hidden</span>
+            <span>unique
                 animal species and learn about their habitat, way of</span> <span>adaptation, nutrition and
-                vegetation.</span></p>
+                vegetation.</span>
+        </p>
 
     </header>
+    <div id="container">
+        <div id="scroller">
+            <div id="output">-- 0m --</div>
 
-    <div id="SunlitZone" class="Zone">
-        <div>
-            <h1>The Sunlit Zone</h1>
-        </div>
-        <div>
-            <p>
-                The ocean environment is largely determined by abiotic factors, such as sunlight, temperature, and
-                salinity.
-                These vary from one location to another, with sunlight driving temperature changes both geographically
-                and vertically within the water colum.
-                Surface temperatures are warmer near the equator and much colder near the poles.
-                Surface waters are also warmer than the deeper waters of the open ocean, thanks to heat from sunlight.
-            </p>
-        </div>
-        <div class="row">
-            <div>
-                <img src="images/squid.png" alt="Squid" height="35%" width=auto class="image"
-                    target="squid_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Squid</p>
-                <div id="squid_text" class="image-text hidden-text">A squid is a mollusc with an <br>elongated soft
-                    body, large eyes,
-                    eight arms, and two tentacles in the superorder Decapodiformes, though many other molluscs within
-                    the broader
-                    Neocoleoidea are also called squid despite not strictly fitting these criteria.
+
+            <div id="SunlitZone" class="Zone">
+                <div>
+                    <h1>The Sunlit Zone</h1>
                 </div>
-            </div>
-            <div>
-                <img src="images/tuna.png" alt="tunafish" height="35%" width=auto class="image" target="tunafish_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Tunafish</p>
-                <div id="tunafish_text" class="image-text hidden-text">A tuna is a saltwater fish that belongs <br>to
-                    the tribe Thunnini, a subgrouping of the Scombridae (mackerel) family.
-                    Tuna, opah and mackerel sharks are the only species of fish that can maintain a body temperature
-                    higher than that of the surrounding water </div>
-            </div>
-            <div>
-                <img src="images/searay.png" alt="stingray" height="35%" width=auto class="image" target="stingray_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Stingray</p>
-                <div id="stingray_text" class="image-text hidden-text">Stingrays are a group of sea rays, a type of
-                    cartilaginous fish.<br>
-                    Stingrays are common in coastal tropical and subtropical marine waters throughout the world.
-                    Some species, such as the thorntail stingray , are found in warmer temperate oceans and others, such
-                    as the deepwater stingray, are found in the deep ocean.
+                <div>
+                    <p>
+                        The ocean environment is largely determined by abiotic factors, such as sunlight, temperature,
+                        and
+                        salinity.
+                        These vary from one location to another, with sunlight driving temperature changes both
+                        geographically
+                        and vertically within the water colum.
+                        Surface temperatures are warmer near the equator and much colder near the poles.
+                        Surface waters are also warmer than the deeper waters of the open ocean, thanks to heat from
+                        sunlight.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="MidnightZone" class="Zone">
-        <div>
-            <h1>The Midnight Zone</h1>
-        </div>
-        <div>
-            <p>
-                The bathypelagic zone or bathyal zone is the part of
-                the open ocean that extends from a depth of 1,000 to 4,000 m below
-                the ocean surface. It lies between the mesopelagic above and the abyssopelagic below.
-                The bathypelagic is also known as the midnight zone because of the lack of sunlight;
-                this feature does not allow for photosynthesis-driven primary production, preventing
-                growth of phytoplankton or aquatic plants. Although larger by volume than the photic
-                zone, human knowledge of the bathypelagic zone remains limited by ability to explore
-                the deep ocean.
-            </p>
-        </div>
-        <div class="row">
-            <div>
-                <img src="images/Vampire squid.png" alt="vampire squid" height="35%" width=auto class="image"
-                    target="vampire_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Vampire squid</p>
-                <div id="vampire_text" class="image-text hidden-text">The vampire squid is a small cephalopod which uses its bioluminescent organs and its unique oxygen metabolism to thrive in the parts of the ocean with the lowest concentrations of  oxygen. As a phylogenetic relict, it is the only known surviving member of its order.
-                </div>
-            </div>
-            <div>
-                <img src="images/Sperm whale.png" alt="sperm whale" height="35%" width=auto class="image"
-                    target="swhale_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Sperm whale</p>
-                <div id="swhale_text" class="image-text hidden-text">Sperm whales are the largest of the toothed whales, reaching a maximum length of about 24 metres and weigh up to 55.1 tons. They can reach a depth of –1000m and dive for more then an hour.</div>
-            </div>
-            <div>
-                <img src="images/Pacific sleeper shark.png" alt="pacific sleeper shark" height="35%" width=auto class="image"
-                    target="sleeper_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Pacifis sleeper shark</p>
-                <div id="sleeper_text" class="image-text hidden-text">The Pacific sleeper shark is found in the North Pacific up to 2,000 metres deep. The average mature size is 3.65 m and 318–363 kg. Because food is relatively scarce on the deep sea floor, the sleeper shark is able to store food in its capacious stomach.</div>
-            </div>
-        </div>
-    </div>  
-
-
-    <div id="AbyssalZone" class="Zone">
-        <div>
-            <h1>The Abyssal Zone</h1>
-        </div>
-        <div>
-            <p>
-                The abyss, in the range of -3000 to -6500 m
-                , is largely unexplored, but we know it contains
-                animals, mainly bioluminescencing fishes, found
-                nowhere else on earth. It’s also abundant in minerals
-                frequently used in manufacturing. The bottom at these
-                depths accounts for about one-third of the planet’s seafloor.
-                The sheer size of this area, coupled with the challenges of
-                descending to depths where water pressure can reach
-                600 atmospheres, makes exploration difficult—but by no means impossible.
-            </p>
-        </div>
-        <div class="row">
-            <div>
-                <img src="images/anglerfish.png" alt="anglerfish" height="35%" width=auto class="image"
-                    target="angler_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Anglerfish</p>
-                <div id="angler_text" class="image-text hidden-text">This terrifying fish
-                    hunts with his lure that bioluminescenc, <br> attracting
-                    other fish, and his big- sharp teeth. Luckily he lives in about 5000m under the sea level.
-                </div>
-            </div>
-            <div>
-                <img src="images/glashead.png" alt="glasheadfish" height="35%" width=auto class="image"
-                    target="glashead_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Glassheadfish</p>
-                <div id="glashead_text" class="image-text hidden-text">This strange-
-                    looking fish has no skull and you can see into <br> his
-                    head. Those green
-                    growths in his head aren’t a second pair of eyes, but light sensors.</div>
-            </div>
-            <div>
-                <img src="images/dumbo.png" alt="dumbo octopus" height="35%" width=auto class="image"
-                    target="dumbo_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Dumbo Octopus</p>
-                <div id="dumbo_text" class="image-text hidden-text">This cute octopus is named
-                    exactly what you thing. With it’s <br> large ear-
-                    like fins,
-                    scientists decided to name the specie after the cartoon elephant dumbo.</div>
-            </div>
-        </div>
-    </div>
-
-    <div id="HadalZone" class="Zone">
-        <div>
-            <h1>The Hadal Zone</h1>
-        </div>
-
-        <div class="row">
-            <div>
-                <img src="images/Pterosyllis finmarchica.png" height="35%" width=auto class="image" target="ptero_text"
-                    onmousemove="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Pterosyllis finmarchica</p>
-                <div id="ptero_text" class="image-text hidden-text">This animal has two pairs of eyes located at the
-                    apex of the body, three antennae and the paired palps. Pterosyllis finmarchica worms also have short
-                    flattened bodies with 10-16 segments. They are often overlooked due to their usually small size of
-                    only a few millimeters. They are found worldwide mainly in coastal areas. Bristleworm experts are
-                    best known for their remarkable beauty, as some species have brightly colored patterns, as well as
-                    long and winding appendages.
-                </div>
-            </div>
-            <div>
-                <img src="images/Coryphella verrucosa3.png" height="35%" width=auto class="image" target="cory_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Coryphella verrucosa</p>
-                <div id="cory_text" class="image-text hidden-text">Coryphella verrucosa, is a species of sea slug, an
-                    aeolid nudibranch, a marine gastropod mollusc in the family Coryphellidae. It is found on either
-                    side of the northern part of the Atlantic Ocean. The body of Coryphella verrucosa is translucent
-                    white. The tail is elongated and pointed with a mid-dorsal line of opaque white pigment in which
-                    there are round translucent spots. This white line may extend along the back amongst the cerata from
-                    the tail, breaking up into spots.</div>
-            </div>
-            <div>
-                <img src="images/Bathyporeia.png" height="35%" width=auto class="image" target="bat_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Bathyporeia</p>
-                <div id="bat_text" class="image-text hidden-text">Bathyporeia occurs in the north-eastern Atlantic
-                    Ocean. Bathyporeia elegans is a translucent, laterally-flattened sand-digger shrimp up to 6
-                    millimetres (0.24 in) long. The head bears two pairs of antennae, four pairs of feeding appendages
-                    and a pair of large red eyes.</div>
-            </div>
-            <div>
-                <img src="images/Alitta virens.png" height="35%" width=auto class="image" target="al_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Alitta virens</p>
-                <div id="al_text" class="image-text hidden-text">Sandworms make up a large part of the live sea-bait
-                    industry. To fulfill the needs of this industry, some sandworms are commercially grown.[4]
-                    Sandworming, the harvesting of sandworms from mudflats, employs over 1,000 people in Maine, US.
+                <div class="row">
+                    <div>
+                        <img src="images/squid.png" alt="Squid" height="35%" width=auto class="image"
+                            target="squid_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Squid</p>
+                        <div id="squid_text" class="image-text hidden-text">A squid is a mollusc with an <br>elongated
+                            soft
+                            body, large eyes,
+                            eight arms, and two tentacles in the superorder Decapodiformes, though many other molluscs
+                            within
+                            the broader
+                            Neocoleoidea are also called squid despite not strictly fitting these criteria.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/tuna.png" alt="tunafish" height="35%" width=auto class="image"
+                            target="tunafish_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Tunafish</p>
+                        <div id="tunafish_text" class="image-text hidden-text">A tuna is a saltwater fish that belongs
+                            <br>to
+                            the tribe Thunnini, a subgrouping of the Scombridae (mackerel) family.
+                            Tuna, opah and mackerel sharks are the only species of fish that can maintain a body
+                            temperature
+                            higher than that of the surrounding water
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/searay.png" alt="stingray" height="35%" width=auto class="image"
+                            target="stingray_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Stingray</p>
+                        <div id="stingray_text" class="image-text hidden-text">Stingrays are a group of sea rays, a type
+                            of
+                            cartilaginous fish.<br>
+                            Stingrays are common in coastal tropical and subtropical marine waters throughout the world.
+                            Some species, such as the thorntail stingray , are found in warmer temperate oceans and
+                            others,
+                            such
+                            as the deepwater stingray, are found in the deep ocean.
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <p id="text">Like the rest of the deep sea, the hadal zone is an extreme environment characterized by the
-                lack of natural light, low food availability and high levels of hydrostatic pressure increasing one
-                atmospheres every 10 meters. These conditions make for a challenging environment for life to thrive in.
-            </p>
-            <div>
-                <img src="images/Aurelia aurita.png" height="35%" width=auto class="image" target="au_text"
-                    onmouseover="showText(this)" onmouseleave="hideText(this)">
-                <p class="under_text">Aurelia aurita</p>
-                <div id="au_text" class="image-text hidden-text">The jellyfish is almost entirely translucent, usually
-                    about 25–40 cm (10–16 in) in diameter, and can be recognized by its four horseshoe-shaped gonads,
-                    easily seen through the top of the bell. It feeds by collecting medusae, plankton, and mollusks with
-                    its tentacles, and bringing them into its body for digestion. It is capable of only limited motion,
-                    and drifts with the current, even when swimming.</div>
+            <div id="MidnightZone" class="Zone">
+                <div>
+                    <h1>The Midnight Zone</h1>
+                </div>
+                <div>
+                    <p>
+                        The bathypelagic zone or bathyal zone is the part of
+                        the open ocean that extends from a depth of 1,000 to 4,000 m below
+                        the ocean surface. It lies between the mesopelagic above and the abyssopelagic below.
+                        The bathypelagic is also known as the midnight zone because of the lack of sunlight;
+                        this feature does not allow for photosynthesis-driven primary production, preventing
+                        growth of phytoplankton or aquatic plants. Although larger by volume than the photic
+                        zone, human knowledge of the bathypelagic zone remains limited by ability to explore
+                        the deep ocean.
+                    </p>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="images/Vampire squid.png" alt="vampire squid" height="35%" width=auto class="image"
+                            target="vampire_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Vampire squid</p>
+                        <div id="vampire_text" class="image-text hidden-text">The vampire squid is a small cephalopod
+                            which
+                            uses its bioluminescent organs and its unique oxygen metabolism to thrive in the parts of
+                            the
+                            ocean with the lowest concentrations of oxygen. As a phylogenetic relict, it is the only
+                            known
+                            surviving member of its order.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/Sperm whale.png" alt="sperm whale" height="35%" width=auto class="image"
+                            target="swhale_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Sperm whale</p>
+                        <div id="swhale_text" class="image-text hidden-text">Sperm whales are the largest of the toothed
+                            whales, reaching a maximum length of about 24 metres and weigh up to 55.1 tons. They can
+                            reach a
+                            depth of –1000m and dive for more then an hour.</div>
+                    </div>
+                    <div>
+                        <img src="images/Pacific sleeper shark.png" alt="pacific sleeper shark" height="35%" width=auto
+                            class="image" target="sleeper_text" onmouseover="showText(this)"
+                            onmouseleave="hideText(this)">
+                        <p class="under_text">Pacifis sleeper shark</p>
+                        <div id="sleeper_text" class="image-text hidden-text">The Pacific sleeper shark is found in the
+                            North Pacific up to 2,000 metres deep. The average mature size is 3.65 m and 318–363 kg.
+                            Because
+                            food is relatively scarce on the deep sea floor, the sleeper shark is able to store food in
+                            its
+                            capacious stomach.</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="AbyssalZone" class="Zone">
+                <div>
+                    <h1>The Abyssal Zone</h1>
+                </div>
+                <div>
+                    <p>
+                        The abyss, in the range of -3000 to -6500 m
+                        , is largely unexplored, but we know it contains
+                        animals, mainly bioluminescencing fishes, found
+                        nowhere else on earth. It’s also abundant in minerals
+                        frequently used in manufacturing. The bottom at these
+                        depths accounts for about one-third of the planet’s seafloor.
+                        The sheer size of this area, coupled with the challenges of
+                        descending to depths where water pressure can reach
+                        600 atmospheres, makes exploration difficult—but by no means impossible.
+                    </p>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="images/anglerfish.png" alt="anglerfish" height="35%" width=auto class="image"
+                            target="angler_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Anglerfish</p>
+                        <div id="angler_text" class="image-text hidden-text">This terrifying fish
+                            hunts with his lure that bioluminescenc, <br> attracting
+                            other fish, and his big- sharp teeth. Luckily he lives in about 5000m under the sea level.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/glashead.png" alt="glasheadfish" height="35%" width=auto class="image"
+                            target="glashead_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Glassheadfish</p>
+                        <div id="glashead_text" class="image-text hidden-text">This strange-
+                            looking fish has no skull and you can see into <br> his
+                            head. Those green
+                            growths in his head aren’t a second pair of eyes, but light sensors.</div>
+                    </div>
+                    <div>
+                        <img src="images/dumbo.png" alt="dumbo octopus" height="35%" width=auto class="image"
+                            target="dumbo_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Dumbo Octopus</p>
+                        <div id="dumbo_text" class="image-text hidden-text">This cute octopus is named
+                            exactly what you thing. With it’s <br> large ear-
+                            like fins,
+                            scientists decided to name the specie after the cartoon elephant dumbo.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="HadalZone" class="Zone">
+                <div>
+                    <h1>The Hadal Zone</h1>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <img src="images/Pterosyllis finmarchica.png" height="35%" width=auto class="image"
+                            target="ptero_text" onmousemove="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Pterosyllis finmarchica</p>
+                        <div id="ptero_text" class="image-text hidden-text">This animal has two pairs of eyes located at
+                            the
+                            apex of the body, three antennae and the paired palps. Pterosyllis finmarchica worms also
+                            have
+                            short
+                            flattened bodies with 10-16 segments. They are often overlooked due to their usually small
+                            size
+                            of
+                            only a few millimeters. They are found worldwide mainly in coastal areas. Bristleworm
+                            experts
+                            are
+                            best known for their remarkable beauty, as some species have brightly colored patterns, as
+                            well
+                            as
+                            long and winding appendages.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/Coryphella verrucosa3.png" height="35%" width=auto class="image"
+                            target="cory_text" onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Coryphella verrucosa</p>
+                        <div id="cory_text" class="image-text hidden-text">Coryphella verrucosa, is a species of sea
+                            slug,
+                            an
+                            aeolid nudibranch, a marine gastropod mollusc in the family Coryphellidae. It is found on
+                            either
+                            side of the northern part of the Atlantic Ocean. The body of Coryphella verrucosa is
+                            translucent
+                            white. The tail is elongated and pointed with a mid-dorsal line of opaque white pigment in
+                            which
+                            there are round translucent spots. This white line may extend along the back amongst the
+                            cerata
+                            from
+                            the tail, breaking up into spots.</div>
+                    </div>
+                    <div>
+                        <img src="images/Bathyporeia.png" height="35%" width=auto class="image" target="bat_text"
+                            onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Bathyporeia</p>
+                        <div id="bat_text" class="image-text hidden-text">Bathyporeia occurs in the north-eastern
+                            Atlantic
+                            Ocean. Bathyporeia elegans is a translucent, laterally-flattened sand-digger shrimp up to 6
+                            millimetres (0.24 in) long. The head bears two pairs of antennae, four pairs of feeding
+                            appendages
+                            and a pair of large red eyes.</div>
+                    </div>
+                    <div>
+                        <img src="images/Alitta virens.png" height="35%" width=auto class="image" target="al_text"
+                            onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Alitta virens</p>
+                        <div id="al_text" class="image-text hidden-text">Sandworms make up a large part of the live
+                            sea-bait
+                            industry. To fulfill the needs of this industry, some sandworms are commercially grown.[4]
+                            Sandworming, the harvesting of sandworms from mudflats, employs over 1,000 people in Maine,
+                            US.
+                        </div>
+                    </div>
+
+                    <p id="text">Like the rest of the deep sea, the hadal zone is an extreme environment characterized
+                        by
+                        the
+                        lack of natural light, low food availability and high levels of hydrostatic pressure increasing
+                        one
+                        atmospheres every 10 meters. These conditions make for a challenging environment for life to
+                        thrive
+                        in.
+                    </p>
+                    <div>
+                        <img src="images/Aurelia aurita.png" height="35%" width=auto class="image" target="au_text"
+                            onmouseover="showText(this)" onmouseleave="hideText(this)">
+                        <p class="under_text">Aurelia aurita</p>
+                        <div id="au_text" class="image-text hidden-text">The jellyfish is almost entirely translucent,
+                            usually
+                            about 25–40 cm (10–16 in) in diameter, and can be recognized by its four horseshoe-shaped
+                            gonads,
+                            easily seen through the top of the bell. It feeds by collecting medusae, plankton, and
+                            mollusks
+                            with
+                            its tentacles, and bringing them into its body for digestion. It is capable of only limited
+                            motion,
+                            and drifts with the current, even when swimming.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -254,11 +317,12 @@
         <p id="footerP">No life here? 🐠</p>
 
         <br>
-        <center><a id="footerA" href="https://www.instagram.com/ivcholeshin/?next=%2F&hl=bg" target="_blank">Contact us
+        <center><a id="footerA" href="https://www.instagram.com/ivcholeshin/?next=%2F&hl=bg" target="_blank">Contact
+                us
                 here</a></center>
         <br>
 
-        <center><img id="logo2" src="logo3.png" alt="Logo" style="width:100px; height: 100px;"></center>
+        <center><img id="logo2" src="images/logo3.png" alt="Logo" style="width:100px; height: 100px;"></center>
 
         <div id="footerD">The secrets of the depth © 2024</div>
 
@@ -300,11 +364,14 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        const output = document.querySelector("#output");
+
+        window.addEventListener("scroll", (event) => {
+            let scroll = Math.trunc(this.scrollY);
+            output.textContent = `-- ${scroll}m --`;
+        });
     </script>
-
-
-
-
 </body>
 
 </html>
