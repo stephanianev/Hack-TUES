@@ -1,0 +1,118 @@
+.image {
+    height: 200px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+    flex: 33.33%;
+    padding: 5px;
+    
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  opacity: 1;
+}
+
+.paragraph{
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  opacity: 1;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.headline {
+    padding-bottom: 0em;
+}
+
+.under_text {
+    text-align: center;
+}
+
+.image-text {
+  transition: .5s ease;
+  position: relative;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  max-width: 20em;
+}
+
+#AbyssalZone{
+  border-bottom: 2px solid gray;
+}
+
+#HadalZone{
+  border-bottom: 2px solid gray;
+}
+
+.backimage {
+  opacity: 0.7;
+}
+
+.hidden-text {
+  opacity: 0;
+}
+
+.shown-text {
+  opacity: 1;
+}
+
+#text{
+  max-width: 400px;
+  font-size: 20px;
+}
