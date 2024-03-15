@@ -1,46 +1,103 @@
 header{
     
     font-size: 25px;
-    background-image:url(water.jpg) ;
-    background-repeat: no-repeat;
-    background-size:cover;
     font-family: rop;
     box-sizing: border-box;
+    height: 100vp;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    margin: auto; 
+    border-bottom: 3px solid gray;
+
 }
 
 h1{
-    padding-bottom: 4em;
-    padding-top: 30px;
+    padding-bottom: 7em;
+    padding-top: 3em;
     text-align: center;
     padding-left: -50px;
+    color: grey;
+    font-size: large30em;
 }
 
 #topnav{
     list-style-type: none;
-    margin: 0;
+    margin: 2em;
+    margin-left: 16em;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid gray;
 }
 
 #nav{
-    padding: 30px;
+    padding: 15px;
     text-decoration: none;
-    color: black;
+    color: grey;
+    border: 2px solid transparent;
+    margin: 30px 0px;
 }
 
 #nav:hover{
-    color: white;
-    text-decoration:underline;
+    color: black;
+    border-color: gray;
 }
 
 #logo{
     width: 7em;
     height: 7em;
     padding-top: 30px;
+    margin-left: 2em;
     position: absolute;
     top: 10px;
 }
+
+#topInfo{
+    color: gray;
+    text-align: center;
+    max-width: 27em;
+    padding: 2em 4em;
+    position: absolute;
+    left: 12em;
+    top: 12em;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5,1,0.89,1);
+    opacity: 1;
+}
+
+@keyframes scale{100%{
+
+    transform: scale(1);
+    }
+}
+
+span{
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span:nth-child(1){
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11,0,0.5,0);
+}
+
+span:nth-child(2){
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11,0,0.5,0);
+}
+
+span:nth-child(3){
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11,0,0.5,0);
+}
+
+@keyframes fade-in{
+100%{
+    opacity: 1;
+    filter: blur(0);
+}
+}
+
+
+
+
 
 
